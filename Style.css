@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    transform: translate(0,20%);
+    min-width: 700px;
+    background: linear-gradient(90deg,rgb(191, 224, 224) 10%, rgb(126, 173, 173) 30%,rgb(77, 121, 121) 60%);
+}
+
+h1{
+    margin-top: -30px;
+    padding-bottom: 30px;
+}
+
+.hands{
+    background: white;
+    width: -moz-fit-content;
+    width: -ms-fit-content;
+    width: fit-content;
+    margin: auto;
+    border-radius: 10px;
+    border:darkcyan 5px solid;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+.robot-hand{
+    padding-bottom: 20px;
+}
+
+.robot-paper,.robot-rock{
+    position: absolute;
+}
+
+.robot-paper,.robot-rock,.robot-scissors{
+    visibility: hidden;
+}
+
+.robot-paper.show,
+.robot-rock.show,
+.robot-scissors.show {
+    visibility: visible;
+    transform: translate(0,10%);
+    transition: transform 0.5s;
+}
+
+.player-hand{
+    width: 500px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.player-paper,.player-rock,.player-scissors{
+    cursor: pointer;
+}
+
+.player-paper:active,.player-rock:active,.player-scissors:active{
+    transform: scale(0.9);
+    transition: transform .1s;
+}
+
+.player-paper:hover,.player-rock:hover,.player-scissors:hover{
+    opacity: 0.9;
+}
+
+.scores {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    padding: 70px 30px 20px 20px;
+    border-radius: 5px;
+    color: rgb(1, 63, 63);
+}
+
+#player-score{
+    padding-bottom: 20px;
+}
+
+#resultP {
+    position: relative;
+    top: 70px;
+    font-weight: 700;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: white;
+    width: 200px;
+    margin: auto;
+    border-radius: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    visibility: hidden;
+}
+
+@media (max-width: 1000px) {
+    .scores{
+        top:110%;
+    }
+}

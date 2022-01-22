@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Paper-Rock-Scissors</title>
+</head>
+<body>
+    <h1>Paper Rock Scissors</h1>
+    <section class="hands">
+        <div class="robot-hand">
+            <a class="robot-paper random"><img src="./IMG/Robot_Paper.jpg" alt="robot-paper"></a>
+            <a class="robot-rock random"><img src="./IMG/Robot_Rock.jpg" alt="robot-rock"></a>
+            <a class="robot-scissors random"><img src="./IMG/Robot_Scissors.jpg" alt="robot-scissors"></a>
+        </div>
+        <div class="player-hand">
+            <button class="player-paper" onclick="renderHand1()"><img src="./IMG/Player_Paper.jpg" alt="player-paper"></button>
+            <button class="player-rock" onclick="renderHand2()"><img src="./IMG/Player_Rock.jpg" alt="player-rock"></button>
+            <button class="player-scissors" onclick="renderHand3()"><img src="./IMG/Player_Scissors.jpg" alt="player-scissors"></button>
+        </div>
+    </section>
+
+    <section class="scores">
+        <div id="player-score">Player's score: 0</div>
+        <div id="robot-score">Robot's score: 0</div>
+    </section>
+
+    <section class="result-class">
+        <p id="resultP"></p>
+    </section>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/result.js"></script>
+</body>
+</html>
