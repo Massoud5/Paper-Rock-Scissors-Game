@@ -7,7 +7,7 @@ let robotArr = [
 const playerId = document.getElementById("player-score")
 const robotId = document.getElementById("robot-score")
 let playerScore = 0
-let robotScore = 0
+let robotScore =0
 
 
 function renderHand1() {
