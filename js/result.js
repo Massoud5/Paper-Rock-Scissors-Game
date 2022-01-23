@@ -1,6 +1,7 @@
 alert(` 
 
         The first one who reach the score of 10, will win.`)
+        
 const resultEl = document.getElementById("resultP")
 
 function result() {

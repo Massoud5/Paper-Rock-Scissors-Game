@@ -36,7 +36,7 @@ function renderHand1() {
 
     playerId.textContent = ` Player's score: ${playerScore}`
     robotId.textContent = ` Robot's score: ${robotScore}`
-    result()
+    result ()
 }
 
 function renderHand2() {
@@ -64,7 +64,7 @@ function renderHand2() {
 
     playerId.textContent = ` Player's score: ${playerScore}`
     robotId.textContent = ` Robot's score: ${robotScore}`
-    result()    
+    result ()    
 }
 
 function renderHand3() {
